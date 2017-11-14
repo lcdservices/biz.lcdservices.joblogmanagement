@@ -18,7 +18,8 @@ return array (
       'api_action' => 'Purge',
       // Parameter 2: api_call by default takes 'all' value. If you explicitly define it here as api_call=job.version_check or anything else,
       // then only the log records for the above job_type would be deleted based on the day_retained value
-      'parameters' => 'days_retained=90',
+      'parameters' => 'days_retained=90
+      api_call=all',
     ),
   ),
 );
