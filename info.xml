@@ -1,22 +1,22 @@
 <?xml version="1.0"?>
 <extension key="biz.lcdservices.joblogmanagement" type="module">
   <file>joblogmanagement</file>
-  <name>Job log management</name>
+  <name>Job Log Management</name>
   <description>
-  This extension provides with an API that handles purging old job records.
+  This extension provides an API that handles purging old scheduled job log records.
   It accepts two parameters:
   1. days_retained (required) = The number of days to retain records for. Any job logs older than that day range are purged.
-  2. api_call (optional) = Only purges logs of a specific type(e.g. job.versionCheck) if explicitly mentioned else deletes all based on the above param.
+  2. api_call (optional) = Only purges logs of a specific type(e.g. job.versionCheck) if explicitly mentioned else deletes all based on the above param. A value of "all" will also purge logs for any API call types.
   </description>
   <license>AGPL-3.0</license>
   <maintainer>
-    <author>Mountev Ltd</author>
-    <email>info@mountev.co.uk</email>
+    <author>Lighthouse Consulting and Design/Mountev Ltd.</author>
+    <email>dev@lcdservices.biz, info@mountev.co.uk</email>
   </maintainer>
   <urls>
-    <url desc="Main Extension Page"></url>
-    <url desc="Documentation"></url>
-    <url desc="Support"></url>
+    <url desc="Main Extension Page">https://github.com/lcdservices/biz.lcdservices.joblogmanagement</url>
+    <url desc="Documentation">https://github.com/lcdservices/biz.lcdservices.joblogmanagement</url>
+    <url desc="Support">https://github.com/lcdservices/biz.lcdservices.joblogmanagement/issues</url>
     <url desc="Licensing">http://www.gnu.org/licenses/agpl-3.0.html</url>
   </urls>
   <releaseDate>2017-11-14</releaseDate>

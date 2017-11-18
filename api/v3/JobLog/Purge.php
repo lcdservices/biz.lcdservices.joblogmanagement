@@ -11,14 +11,14 @@
 function _civicrm_api3_job_log_Purge_spec(&$spec) {
   $spec['days_retained'] = array (
     'api.required' => 1,
-    'api.default'  => 90,
-    'title'        => ts('Days retained'),
-    'type'         => CRM_Utils_Type::T_INT,
+    'api.default' => 90,
+    'title' => ts('Days retained'),
+    'type' => CRM_Utils_Type::T_INT,
   );
   $spec['api_call'] = array (
     'api.default' => 'all',
-    'title'       => ts('API call'),
-    'type'        => CRM_Utils_Type::T_STRING,
+    'title' => ts('API call'),
+    'type' => CRM_Utils_Type::T_STRING,
   );
 }
 
@@ -40,7 +40,7 @@ function civicrm_api3_job_log_Purge($params) {
     // Check if the param "api_call" is set and it's not set to 'all'
     if (CRM_Utils_Array::value('api_call', $params) &&
     $params['api_call'] != 'all') {
-      $apiCall   = explode('.', $params['api_call']);
+      $apiCall = explode('.', $params['api_call']);
       $apiEntity = $apiCall[0];
       $apiAction = $apiCall[1];
 
